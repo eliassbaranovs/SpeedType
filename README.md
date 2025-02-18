@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# SpeedType
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern typing speed test application built with React and TypeScript.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SpeedType is an interactive web application that helps users measure and improve their typing speed and accuracy. With a clean, minimalist interface and real-time feedback, users can track their progress and enhance their typing skills.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Real-time WPM (Words Per Minute) calculation
+- Accuracy tracking
+- Clean and responsive user interface
+- Different text difficulty levels
+- Instant feedback on typing errors
+- Progress tracking over time
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React 18
+- TypeScript
+- Vite
+- CSS Modules
+- React Context for state management
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/SpeedType.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd SpeedType
+npm install
 ```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Contributing
+
+Feel free to submit issues and pull requests to help improve the application.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Elias Baranovs - [GitHub](https://github.com/eliassbaranovs)
