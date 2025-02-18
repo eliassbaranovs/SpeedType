@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,3 +49,7 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# SpeedType
+A modern typing speed test application built with React and TypeScript.
+>>>>>>> 5c140c93bf4eb2df38d01ed046973d5af61b5dad
